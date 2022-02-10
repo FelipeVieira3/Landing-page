@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+:root {
+    --cor1: #F9DDC2;
+    --cor2: #F99897;
+    --cor3: #FC888F;
+    --cor4: #F9526D;
+    --cor5: #844B55;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+body {
+    font-size:100%;
+    background-image:linear-gradient(to bottom, #F9526D, #FC888F, #F99897)
+}
+
+header {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    padding:10px;
+}
+
+img.cabecalho {
+    max-height:72px;
+}
+
+nav {
+    font-family: 'Sarala', sans-serif;
+    display:flex;
+    gap:30px;
+}
+
+nav > a {
+    color: var(--cor1);
+}
+
+nav > a:hover {
+    color:var(--cor2);
+}
+
+main {
+    border-top:0.4px solid var(--cor1);
+    margin-bottom:48px;
+}
+
+section.principal {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+
+div.conteudo-principal {
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+h1 {
+    font-family:'Supermercado One', sans-serif;
+    color:var(--cor1);
+    font-size:64px;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.411);
+}
+
+p.subtitulo {
+    font-family: 'Sarala', sans-serif;
+    color: var(--cor1);
+    font-size:19px;
+}
+
+button {
+    background-color: var(--cor2);
+    font-family:'Sarala';
+    font-size: 20px;
+    width:180px;
+    height:60px;
+    border:none;
+    box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+
+button a {
+    text-decoration:none;
+    color: var(--cor1);
+}
+
+button:hover {
+    background-color: var(--cor4);
+}
+
+img.logo-main {
+    height: 430px;
+}
+
+section.secundario {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    margin-top:48px;
+}
+
+h2 {
+    border-top:0.4px solid #F9DDC2;
+    padding-top:48px;
+    font-family: 'Supermercado One', sans-serif;
+    color: var(--cor1);
+    font-size:48px;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.411);
+}
+
+section p {
+    font-family: 'Sarala', sans-serif;
+    color: var(--cor1);
+}
+
+section p.segundo:hover {
+    color: var(--cor4);
+}
+
+footer {
+    padding:5px;
+    border-top: 0.4px solid #F9DDC2;
+}
+
+img.rodape {
+    height:180px;
+    display:block;
+    margin:0 auto;
+}
