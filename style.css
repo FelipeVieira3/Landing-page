@@ -27,31 +27,38 @@ header {
     display:flex;
     flex-direction:row;
     align-items:center;
+    min-height:150px;
     justify-content:space-around;
     padding:10px;
+}
+
+button.mobile {
+    display:none;
 }
 
 img.cabecalho {
     max-height:72px;
 }
 
-nav {
+nav#primary-navigation {
     font-family: 'Sarala', sans-serif;
     display:flex;
     gap:30px;
 }
 
-nav > a {
+nav#primary-navigation > a {
     color: var(--cor1);
 }
 
-nav > a:hover {
+nav#primary-navigation > a:hover {
     color:var(--cor2);
 }
 
 main {
     border-top:0.4px solid var(--cor1);
     margin-bottom:48px;
+    min-width:500px;
+    max-width:1518px;
 }
 
 section.principal {
@@ -59,12 +66,16 @@ section.principal {
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
+    min-width:500px;
+    max-width:1518px;
 }
 
 div.conteudo-principal {
     display:flex;
     flex-direction:column;
     gap:32px;
+    min-width:500px;
+    max-width:1518px;
 }
 
 h1 {
@@ -80,7 +91,7 @@ p.subtitulo {
     font-size:19px;
 }
 
-button {
+button.contato {
     background-color: var(--cor2);
     font-family:'Sarala';
     font-size: 20px;
@@ -92,17 +103,20 @@ button {
 
 }
 
-button a {
+button.contato a {
     text-decoration:none;
     color: var(--cor1);
 }
 
-button:hover {
+button.contato:hover {
     background-color: var(--cor4);
 }
 
 img.logo-main {
+    position:relative;
     height: 430px;
+    background-position: center;
+    background-size:cover;
 }
 
 section.secundario {
